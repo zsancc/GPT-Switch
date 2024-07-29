@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+  }
+  
+  .popup-container {
+    width: 400px;
+    /* max-width: 800px; */
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-sizing: border-box;
+  }
+  
+
+
+  .extention-name{
+    font-size: 20px;
+    font-weight: 700;
+    color: #0a19e6;
+    margin-bottom: 20px;
+    text-align: center; /* 将文本对齐方式设置为居中 */
+    margin-left: auto; /* 将左外边距设为自动 */
+    margin-right: auto; /* 将右外边距设为自动 */
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 6px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  .btn.primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn.secondary {
+    background-color: #6c757d;
+    color: #fff;
+  }
+  
+  .btn.danger {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  #current-account {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: #1900ff;
+  }
+  
+  table {
+    font-size: 14px;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  td {
+    color: #555;
+  }
+  
+  thead {
+    background-color: #e9ecef;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f8f9fa;
+  }
+  

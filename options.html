@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Account Manager</title>
+    <script src="options.js"></script>
+</head>
+<body>
+    <h1>Manage Accounts</h1>
+    <table id="accountTable" border="1">
+        <thead>
+            <tr>
+                <th>Account</th>
+                <th>Expiration Time</th>
+                <th>Token</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+    <br>
+    <button onclick="addAccount()">Add Account</button>
+    <div id="addAccountForm" style="display:none;">
+        <h3>Add New Account</h3>
+        <label for="newAccount">Account:</label>
+        <input type="text" id="newAccount" name="newAccount"><br>
+        <label for="newExpiration">Expiration Time:</label>
+        <input type="datetime-local" id="newExpiration" name="newExpiration"><br>
+        <label for="newToken">Token:</label>
+        <textarea id="newToken" name="newToken"></textarea><br>
+        <button onclick="saveAccount()">Save</button>
+        <button onclick="cancelAdd()">Cancel</button>
+    </div>
+</body>
+</html>

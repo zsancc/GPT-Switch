@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Manager</title>
+  <script src="popup.js"></script>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="popup-container">
+    <div class="extention-name">GPT账号切换</div>
+    <div class="buttons">
+      <button id="set-cookie-btn" class="btn primary">切换账号</button>
+      <button id="refresh-page-btn" class="btn primary">刷新页面</button>
+    </div>
+    <div class="buttons">
+        <button id="add-account-btn" class="btn primary">添加用户</button>
+        <input type="file" id="file-input" accept=".json" style="display:none">
+        <button id="import-cookies-btn" class="btn primary">导入Cookies</button>
+        <button id="clear-storage-btn" class="btn danger">清除所有</button>
+    </div>
+    <div id="current-account" class="current-account">当前账户: None</div>
+    <hr>
+    <table id="accounts-table">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Token</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
